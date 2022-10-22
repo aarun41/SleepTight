@@ -8,22 +8,39 @@
 
 /* Begin PBXBuildFile section */
 		4930E36929036B51002DF753 /* SleepTightApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930E36829036B51002DF753 /* SleepTightApp.swift */; };
-		4930E36B29036B51002DF753 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930E36A29036B51002DF753 /* ContentView.swift */; };
+		4930E36B29036B51002DF753 /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930E36A29036B51002DF753 /* MotherView.swift */; };
 		4930E37129036B52002DF753 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4930E37029036B52002DF753 /* Preview Assets.xcassets */; };
 		4930E378290373F0002DF753 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930E377290373F0002DF753 /* LaunchScreen.swift */; };
 		4930E37A29038B15002DF753 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930E37929038B15002DF753 /* LoginScreen.swift */; };
 		4930E37C29039882002DF753 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4930E37B29039882002DF753 /* Assets.xcassets */; };
+		497AC62429044C2800540944 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497AC62329044C2800540944 /* Helper.swift */; };
+		497AC62629044F3900540944 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497AC62529044F3900540944 /* ViewRouter.swift */; };
+		49CD0F9F29045AB500087BCF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49CD0F9E29045AB500087BCF /* GoogleService-Info.plist */; };
+		49CD0FA129045AD700087BCF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49CD0FA029045AD700087BCF /* GoogleService-Info.plist */; };
+		49CD0FA429045B6200087BCF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 49CD0FA329045B6200087BCF /* FirebaseAuth */; };
+		49CD0FA629045D4D00087BCF /* UserRegistrationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CD0FA529045D4D00087BCF /* UserRegistrationScreen.swift */; };
+		49CD0FA82904605900087BCF /* DoctorRegistrationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CD0FA72904605900087BCF /* DoctorRegistrationScreen.swift */; };
+		49CD0FAA2904608500087BCF /* UserHomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CD0FA92904608500087BCF /* UserHomePage.swift */; };
+		49CD0FAC2904609100087BCF /* DoctorPatientList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CD0FAB2904609100087BCF /* DoctorPatientList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4930E36529036B51002DF753 /* SleepTight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepTight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4930E36829036B51002DF753 /* SleepTightApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepTightApp.swift; sourceTree = "<group>"; };
-		4930E36A29036B51002DF753 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4930E36A29036B51002DF753 /* MotherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
 		4930E36E29036B52002DF753 /* SleepTight.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SleepTight.entitlements; sourceTree = "<group>"; };
 		4930E37029036B52002DF753 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4930E377290373F0002DF753 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 		4930E37929038B15002DF753 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		4930E37B29039882002DF753 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		497AC62329044C2800540944 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		497AC62529044F3900540944 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		49CD0F9E29045AB500087BCF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		49CD0FA029045AD700087BCF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		49CD0FA529045D4D00087BCF /* UserRegistrationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationScreen.swift; sourceTree = "<group>"; };
+		49CD0FA72904605900087BCF /* DoctorRegistrationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorRegistrationScreen.swift; sourceTree = "<group>"; };
+		49CD0FA92904608500087BCF /* UserHomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHomePage.swift; sourceTree = "<group>"; };
+		49CD0FAB2904609100087BCF /* DoctorPatientList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorPatientList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49CD0FA429045B6200087BCF /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,11 +75,18 @@
 			isa = PBXGroup;
 			children = (
 				4930E36829036B51002DF753 /* SleepTightApp.swift */,
-				4930E36A29036B51002DF753 /* ContentView.swift */,
+				4930E36A29036B51002DF753 /* MotherView.swift */,
 				4930E377290373F0002DF753 /* LaunchScreen.swift */,
 				4930E37929038B15002DF753 /* LoginScreen.swift */,
+				49CD0FA529045D4D00087BCF /* UserRegistrationScreen.swift */,
+				49CD0FA72904605900087BCF /* DoctorRegistrationScreen.swift */,
+				49CD0FA92904608500087BCF /* UserHomePage.swift */,
+				49CD0FAB2904609100087BCF /* DoctorPatientList.swift */,
+				497AC62329044C2800540944 /* Helper.swift */,
+				497AC62529044F3900540944 /* ViewRouter.swift */,
 				4930E37B29039882002DF753 /* Assets.xcassets */,
 				4930E36E29036B52002DF753 /* SleepTight.entitlements */,
+				49CD0FA029045AD700087BCF /* GoogleService-Info.plist */,
 				4930E36F29036B52002DF753 /* Preview Content */,
 			);
 			path = SleepTight;
@@ -70,6 +95,7 @@
 		4930E36F29036B52002DF753 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				49CD0F9E29045AB500087BCF /* GoogleService-Info.plist */,
 				4930E37029036B52002DF753 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -91,6 +117,9 @@
 			dependencies = (
 			);
 			name = SleepTight;
+			packageProductDependencies = (
+				49CD0FA329045B6200087BCF /* FirebaseAuth */,
+			);
 			productName = SleepTight;
 			productReference = 4930E36529036B51002DF753 /* SleepTight.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +148,9 @@
 				Base,
 			);
 			mainGroup = 4930E35C29036B51002DF753;
+			packageReferences = (
+				49CD0FA229045B6200087BCF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 4930E36629036B51002DF753 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -134,7 +166,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4930E37129036B52002DF753 /* Preview Assets.xcassets in Resources */,
+				49CD0FA129045AD700087BCF /* GoogleService-Info.plist in Resources */,
 				4930E37C29039882002DF753 /* Assets.xcassets in Resources */,
+				49CD0F9F29045AB500087BCF /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,10 +179,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49CD0FA629045D4D00087BCF /* UserRegistrationScreen.swift in Sources */,
 				4930E37A29038B15002DF753 /* LoginScreen.swift in Sources */,
-				4930E36B29036B51002DF753 /* ContentView.swift in Sources */,
+				49CD0FAC2904609100087BCF /* DoctorPatientList.swift in Sources */,
+				4930E36B29036B51002DF753 /* MotherView.swift in Sources */,
+				497AC62429044C2800540944 /* Helper.swift in Sources */,
+				497AC62629044F3900540944 /* ViewRouter.swift in Sources */,
 				4930E378290373F0002DF753 /* LaunchScreen.swift in Sources */,
 				4930E36929036B51002DF753 /* SleepTightApp.swift in Sources */,
+				49CD0FAA2904608500087BCF /* UserHomePage.swift in Sources */,
+				49CD0FA82904605900087BCF /* DoctorRegistrationScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +398,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		49CD0FA229045B6200087BCF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		49CD0FA329045B6200087BCF /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 49CD0FA229045B6200087BCF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4930E35D29036B51002DF753 /* Project object */;
 }

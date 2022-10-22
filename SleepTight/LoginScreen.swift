@@ -6,13 +6,16 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct LoginScreen: View {
     @State var username: String = ""
     @State var password: String = ""
     
     @State var authenticationDidFail: Bool = false
-    @State var authenticationDidSucceed: Bool = true
+    @State var authenticationDidSucceed: Bool = false
+    
+    @EnvironmentObject var viewRouter: ViewRouter
     
     var body: some View {
         VStack {
@@ -37,6 +40,7 @@ struct LoginScreen: View {
                 if self.username == storedUsername && self.password == storedPassword {
                     self.authenticationDidSucceed = true
                     self.authenticationDidFail = false
+                    viewRouter.currentPage = .userHomePage
                 } else {
                     self.authenticationDidFail = true
                 }
@@ -100,8 +104,8 @@ struct LoginButtonContent: View {
     }
 }
 
-struct HomeScreen_Previews: PreviewProvider {
+struct LoginScreen_Previews: PreviewProvider {
     static var previews: some View {
-        LoginScreen()
+        LoginScreen().environmentObject(ViewRouter())
     }
 }
