@@ -1,5 +1,5 @@
 //
-//  OpeningPage.swift
+//  LaunchScreen.swift
 //  SleepTight
 //
 //  Created by Aditi Arun on 10/21/22.
@@ -20,14 +20,18 @@ extension UserDefaults {
 }
 
     struct LaunchScreen: View {
+
         var body: some View {
             VStack(spacing: 20){
                 Text("Welcome").font(.largeTitle)
                 Text("We'll eventually have a tour of our features here for you!").font(.title2)
             }.onAppear(perform: {
                 UserDefaults.standard.launchScreenShown = true
+                //sleep(UInt32(4.0))
+                //LoginScreen()
             })
         }
+        
     }
     
     struct OpeningPage_Previews: PreviewProvider {
