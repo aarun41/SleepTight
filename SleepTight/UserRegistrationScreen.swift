@@ -14,12 +14,13 @@ struct UserRegistrationScreen: View {
     @State var confirmation: String = ""
     
     @State var signUpProcessing = false
-    
+    @State var signUpErrorMessage = ""
     
     @EnvironmentObject var viewRouter: ViewRouter
     
     var body: some View {
         VStack {
+            
             UserRegistrationTitle()
             UserEmailField(email: $email)
             UserEnterPasswordField(password: $password)
@@ -28,8 +29,26 @@ struct UserRegistrationScreen: View {
             Button(action: {
                 signUpUser(userEmail: email, userPassword: password)
             }) {
-                LoginButtonContent()
+                RegisterButtonContent()
             }
+            
+            Button(action: {
+                viewRouter.currentPage = .userLoginScreen
+            }) {
+                SwitchToLoginButtonContent()
+            }
+            
+            if signUpProcessing {
+                ProgressView()
+            }
+            
+            if !signUpErrorMessage.isEmpty {
+                Text("Failed creating account: \(signUpErrorMessage)")
+                    .foregroundColor(.red)
+            }
+            
+            Spacer()
+            
         }.padding()
         .disabled(!signUpProcessing && !email.isEmpty && !password.isEmpty && !confirmation.isEmpty && password == confirmation ? false : true)
 
@@ -40,6 +59,7 @@ struct UserRegistrationScreen: View {
         signUpProcessing = true
         Auth.auth().createUser(withEmail: userEmail, password: userPassword) { authResult, error in
             guard error == nil else {
+                signUpErrorMessage = error!.localizedDescription
                 signUpProcessing = false
                 return
             }
@@ -89,23 +109,11 @@ struct UserEnterPasswordField: View {
 struct UserConfirmPasswordField: View {
     @Binding var confirmation: String
     var body: some View {
-        TextField("Enter password here", text: $confirmation)
+        TextField("Confirm password here", text: $confirmation)
             .padding()
             .background(lightGreyColor)
             .cornerRadius(5.0)
             .padding(.bottom, 20)
-    }
-}
-
-struct UserRegisterButtonContent: View {
-    var body: some View {
-        Text("REGISTER")
-            .font(.headline)
-            .foregroundColor(.white)
-            .padding()
-            .frame(width: 220, height: 60)
-            .background(Color.green)
-            .cornerRadius(15.0)
     }
 }
 

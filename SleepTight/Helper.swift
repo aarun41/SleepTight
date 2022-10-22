@@ -8,7 +8,9 @@
 import Foundation
 
 enum Page {
-    case loginScreen
+    case chooseTypeScreen
+    case userLoginScreen
+    case doctorLoginScreen
     case userRegistrationScreen
     case doctorRegistrationScreen
     case userHomePage

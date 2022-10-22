@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-let storedUsername = "gburdell"
-let storedPassword = "hackgt"
 let lightGreyColor = Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0, opacity: 1.0)
 
 struct MotherView: View {
@@ -21,8 +19,10 @@ struct MotherView: View {
         }
         else {
             switch viewRouter.currentPage {
-            case .loginScreen:
-                LoginScreen()
+            case .userLoginScreen:
+                UserLoginScreen()
+            case .doctorLoginScreen:
+                DoctorLoginScreen()
             case .userRegistrationScreen:
                 UserRegistrationScreen()
             case .doctorRegistrationScreen:
@@ -31,6 +31,8 @@ struct MotherView: View {
                 UserHomePage()
             case .doctorPatientList:
                 DoctorPatientList()
+            case .chooseTypeScreen:
+                ChooseTypeScreen()
             }
         }
     }
