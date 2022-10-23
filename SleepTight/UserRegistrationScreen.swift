@@ -101,6 +101,7 @@ struct UserEmailField: View {
             .background(lightGreyColor)
             .cornerRadius(5.0)
             .padding(.bottom, 20)
+            .autocorrectionDisabled()
     }
 }
 
@@ -113,6 +114,7 @@ struct UserEnterPasswordField: View {
             .background(lightGreyColor)
             .cornerRadius(5.0)
             .padding(.bottom, 20)
+            .autocorrectionDisabled()
     }
 }
 
@@ -125,6 +127,7 @@ struct UserConfirmPasswordField: View {
             .background(lightGreyColor)
             .cornerRadius(5.0)
             .padding(.bottom, 20)
+            .autocorrectionDisabled()
     }
 }
 

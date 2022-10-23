@@ -15,6 +15,7 @@
 		497AC62429044C2800540944 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497AC62329044C2800540944 /* Helper.swift */; };
 		497AC62629044F3900540944 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497AC62529044F3900540944 /* ViewRouter.swift */; };
 		49C902AC2905114A0095C69A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49C902AB2905114A0095C69A /* GoogleService-Info.plist */; };
+		49C902AE29052AA20095C69A /* TheGoodDoctorScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C902AD29052AA20095C69A /* TheGoodDoctorScreen.swift */; };
 		49CD0FA429045B6200087BCF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 49CD0FA329045B6200087BCF /* FirebaseAuth */; };
 		49CD0FA629045D4D00087BCF /* UserRegistrationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CD0FA529045D4D00087BCF /* UserRegistrationScreen.swift */; };
 		49CD0FA82904605900087BCF /* DoctorRegistrationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CD0FA72904605900087BCF /* DoctorRegistrationScreen.swift */; };
@@ -37,6 +38,7 @@
 		497AC62329044C2800540944 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		497AC62529044F3900540944 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		49C902AB2905114A0095C69A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		49C902AD29052AA20095C69A /* TheGoodDoctorScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheGoodDoctorScreen.swift; sourceTree = "<group>"; };
 		49CD0F9E29045AB500087BCF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		49CD0FA529045D4D00087BCF /* UserRegistrationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationScreen.swift; sourceTree = "<group>"; };
 		49CD0FA72904605900087BCF /* DoctorRegistrationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorRegistrationScreen.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				49CD0FAB2904609100087BCF /* DoctorPatientList.swift */,
 				497AC62329044C2800540944 /* Helper.swift */,
 				49CD0FBF2904ED0100087BCF /* GBurdellScreen.swift */,
+				49C902AD29052AA20095C69A /* TheGoodDoctorScreen.swift */,
 				497AC62529044F3900540944 /* ViewRouter.swift */,
 				49CD0FBD2904EB4E00087BCF /* UserCalendarScreen(WIP) */,
 				4930E37B29039882002DF753 /* Assets.xcassets */,
@@ -191,6 +194,7 @@
 				49CD0FAC2904609100087BCF /* DoctorPatientList.swift in Sources */,
 				49CD0FAE29046EAB00087BCF /* ChooseTypeScreen.swift in Sources */,
 				4930E36B29036B51002DF753 /* MotherView.swift in Sources */,
+				49C902AE29052AA20095C69A /* TheGoodDoctorScreen.swift in Sources */,
 				497AC62429044C2800540944 /* Helper.swift in Sources */,
 				49CD0FB02904717900087BCF /* DoctorLoginScreen.swift in Sources */,
 				497AC62629044F3900540944 /* ViewRouter.swift in Sources */,

@@ -34,10 +34,10 @@ struct MotherView: View {
             case .doctorPatientList:
                 DoctorPatientList()
                 //TGDPatientList
-            /*
-            case: .doctorPrescriptionScreen
+            
+            case .theGoodDoctorScreen:
                 TheGoodDoctorScreen()
-             */
+             
             case .chooseTypeScreen:
                 ChooseTypeScreen()
             }

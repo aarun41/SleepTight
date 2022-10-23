@@ -16,4 +16,5 @@ enum Page {
     case doctorRegistrationScreen
     case userHomePage
     case doctorPatientList
+    case theGoodDoctorScreen
 }
