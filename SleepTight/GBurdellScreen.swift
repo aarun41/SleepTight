@@ -1,24 +1,24 @@
 //
-//  UserHomePage.swift
+//  GBurdellScreen.swift
 //  SleepTight
 //
-//  Reference: https://blckbirds.com/ tutorials
 //  Created by Aditi Arun on 10/22/22.
 //
 
 import SwiftUI
 import Firebase
 
-struct UserHomePage: View {
+struct GBurdellScreen: View {
     
     @EnvironmentObject var viewRouter: ViewRouter
     
     @State var signOutProcessing = false
-    
+    @State var sleepSchedule = ""
+
     var body: some View {
         NavigationView {
             VStack {
-                Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+                DayCell(sleepSchedule: $sleepSchedule)
                 .toolbar {
                     ToolbarItem(placement: .navigationBarTrailing) {
                         if signOutProcessing {
@@ -48,8 +48,20 @@ struct UserHomePage: View {
     }
 }
 
-struct UserHomePage_Previews: PreviewProvider {
+struct DayCell: View {
+    @Binding var sleepSchedule: String
+    var body: some View {
+        VStack {
+            Text("Day")
+            ScrollView {
+                TextField("Today's sleep schedule is", text: $sleepSchedule)
+            }
+        }
+    }
+}
+
+struct GBurdellScreen_Previews: PreviewProvider {
     static var previews: some View {
-        UserHomePage().environmentObject(ViewRouter())
+        GBurdellScreen().environmentObject(ViewRouter())
     }
 }

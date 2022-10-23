@@ -2,6 +2,7 @@
 //  UserLoginScreen.swift
 //  SleepTight
 //
+//  Reference: https://blckbirds.com/ tutorials
 //  Created by Aditi Arun on 10/21/22.
 //
 
@@ -31,22 +32,21 @@ struct UserLoginScreen: View {
             }
             
             Button(action: {
-                print("Login button clicked")
                 signInUser(userEmail: email, userPassword: password)
             }) {
                 LoginButtonContent()
             }
+            .disabled(!signInProcessing && !email.isEmpty && !password.isEmpty ? false : true)
+
             
             Button(action: {
-                print("Back button clicked")
                 viewRouter.currentPage = .chooseTypeScreen
             }) {
                 BackButtonContent()
             }
     
         }.padding()
-         .disabled(!signInProcessing && !email.isEmpty && !password.isEmpty ? false : true)
-        
+                
         if signInProcessing {
             ProgressView()
         }
@@ -95,8 +95,9 @@ struct UserLoginHeading: View {
 struct UserLoginEmailField: View {
     @Binding var email: String
     var body: some View {
-        TextField("gburdell@gatech.edu", text: $email)
+        TextField("Ex: gburdell@gatech.edu", text: $email)
             .padding()
+            .autocapitalization(.none)
             .background(lightGreyColor)
             .cornerRadius(5.0)
             .padding(.bottom, 20)
@@ -108,6 +109,7 @@ struct UserPasswordField: View {
     var body: some View {
         TextField("Enter password here", text: $password)
             .padding()
+            .autocapitalization(.none)
             .background(lightGreyColor)
             .cornerRadius(5.0)
             .padding(.bottom, 20)

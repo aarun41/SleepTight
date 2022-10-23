@@ -22,6 +22,8 @@
 		49CD0FAC2904609100087BCF /* DoctorPatientList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CD0FAB2904609100087BCF /* DoctorPatientList.swift */; };
 		49CD0FAE29046EAB00087BCF /* ChooseTypeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CD0FAD29046EAB00087BCF /* ChooseTypeScreen.swift */; };
 		49CD0FB02904717900087BCF /* DoctorLoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CD0FAF2904717900087BCF /* DoctorLoginScreen.swift */; };
+		49CD0FBE2904EB4E00087BCF /* UserCalendarScreen(WIP) in Resources */ = {isa = PBXBuildFile; fileRef = 49CD0FBD2904EB4E00087BCF /* UserCalendarScreen(WIP) */; };
+		49CD0FC02904ED0100087BCF /* GBurdellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CD0FBF2904ED0100087BCF /* GBurdellScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		49CD0FAB2904609100087BCF /* DoctorPatientList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorPatientList.swift; sourceTree = "<group>"; };
 		49CD0FAD29046EAB00087BCF /* ChooseTypeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseTypeScreen.swift; sourceTree = "<group>"; };
 		49CD0FAF2904717900087BCF /* DoctorLoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorLoginScreen.swift; sourceTree = "<group>"; };
+		49CD0FBD2904EB4E00087BCF /* UserCalendarScreen(WIP) */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "UserCalendarScreen(WIP)"; sourceTree = "<group>"; };
+		49CD0FBF2904ED0100087BCF /* GBurdellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBurdellScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +91,9 @@
 				49CD0FAD29046EAB00087BCF /* ChooseTypeScreen.swift */,
 				49CD0FAB2904609100087BCF /* DoctorPatientList.swift */,
 				497AC62329044C2800540944 /* Helper.swift */,
+				49CD0FBF2904ED0100087BCF /* GBurdellScreen.swift */,
 				497AC62529044F3900540944 /* ViewRouter.swift */,
+				49CD0FBD2904EB4E00087BCF /* UserCalendarScreen(WIP) */,
 				4930E37B29039882002DF753 /* Assets.xcassets */,
 				4930E36E29036B52002DF753 /* SleepTight.entitlements */,
 				49CD0FA029045AD700087BCF /* GoogleService-Info.plist */,
@@ -171,6 +177,7 @@
 			files = (
 				4930E37129036B52002DF753 /* Preview Assets.xcassets in Resources */,
 				49CD0FA129045AD700087BCF /* GoogleService-Info.plist in Resources */,
+				49CD0FBE2904EB4E00087BCF /* UserCalendarScreen(WIP) in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,6 +198,7 @@
 				497AC62629044F3900540944 /* ViewRouter.swift in Sources */,
 				4930E378290373F0002DF753 /* LaunchScreen.swift in Sources */,
 				4930E36929036B51002DF753 /* SleepTightApp.swift in Sources */,
+				49CD0FC02904ED0100087BCF /* GBurdellScreen.swift in Sources */,
 				49CD0FAA2904608500087BCF /* UserHomePage.swift in Sources */,
 				49CD0FA82904605900087BCF /* DoctorRegistrationScreen.swift in Sources */,
 			);

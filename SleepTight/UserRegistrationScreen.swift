@@ -2,6 +2,7 @@
 //  UserRegistrationScreen.swift
 //  SleepTight
 //
+//  Reference: https://blckbirds.com/ tutorials
 //  Created by Aditi Arun on 10/22/22.
 //
 
@@ -31,6 +32,7 @@ struct UserRegistrationScreen: View {
             }) {
                 RegisterButtonContent()
             }
+            .disabled(!signUpProcessing && !email.isEmpty && !password.isEmpty && !confirmation.isEmpty && password == confirmation ? false : true)
             
             Button(action: {
                 viewRouter.currentPage = .userLoginScreen
@@ -50,7 +52,7 @@ struct UserRegistrationScreen: View {
             Spacer()
             
         }.padding()
-        .disabled(!signUpProcessing && !email.isEmpty && !password.isEmpty && !confirmation.isEmpty && password == confirmation ? false : true)
+
 
     }
     
@@ -88,6 +90,7 @@ struct UserEmailField: View {
     @Binding var email: String
     var body: some View {
         TextField("gburdell@gatech.edu", text: $email)
+            .autocapitalization(.none)
             .padding()
             .background(lightGreyColor)
             .cornerRadius(5.0)
@@ -99,6 +102,7 @@ struct UserEnterPasswordField: View {
     @Binding var password: String
     var body: some View {
         TextField("Enter password here", text: $password)
+            .autocapitalization(.none)
             .padding()
             .background(lightGreyColor)
             .cornerRadius(5.0)
@@ -110,6 +114,7 @@ struct UserConfirmPasswordField: View {
     @Binding var confirmation: String
     var body: some View {
         TextField("Confirm password here", text: $confirmation)
+            .autocapitalization(.none)
             .padding()
             .background(lightGreyColor)
             .cornerRadius(5.0)

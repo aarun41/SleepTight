@@ -2,6 +2,7 @@
 //  DoctorLoginScreen.swift
 //  SleepTight
 //
+//  Reference: https://blckbirds.com/ tutorials
 //  Created by Aditi Arun on 10/22/22.
 //
 
@@ -31,10 +32,11 @@ struct DoctorLoginScreen: View {
             }
             
             Button(action: {
-                signInUser(userEmail: email, userPassword: password)
+                signInDoctor(userEmail: email, userPassword: password)
             }) {
                 LoginButtonContent()
             }
+            .disabled(!signInProcessing && !email.isEmpty && !password.isEmpty ? false : true)
             
             Button(action: {
                 viewRouter.currentPage = .chooseTypeScreen
@@ -43,7 +45,6 @@ struct DoctorLoginScreen: View {
             }
             
         }.padding()
-         .disabled(!signInProcessing && !email.isEmpty && !password.isEmpty ? false : true)
         
         if signInProcessing {
             ProgressView()
@@ -56,7 +57,7 @@ struct DoctorLoginScreen: View {
         
     }
     
-    func signInUser(userEmail: String, userPassword: String) {
+    func signInDoctor(userEmail: String, userPassword: String) {
         
         signInProcessing = true
         
@@ -93,7 +94,8 @@ struct DoctorLoginHeading: View {
 struct DoctorLoginEmailField: View {
     @Binding var email: String
     var body: some View {
-        TextField("gburdell@gatech.edu", text: $email)
+        TextField("Ex: gburdell@gatech.edu", text: $email)
+            .autocapitalization(.none)
             .padding()
             .background(lightGreyColor)
             .cornerRadius(5.0)
@@ -105,6 +107,7 @@ struct DoctorPasswordField: View {
     @Binding var password: String
     var body: some View {
         TextField("Enter password here", text: $password)
+            .autocapitalization(.none)
             .padding()
             .background(lightGreyColor)
             .cornerRadius(5.0)
