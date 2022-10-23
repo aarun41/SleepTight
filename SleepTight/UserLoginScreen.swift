@@ -8,6 +8,8 @@
 
 import SwiftUI
 import Firebase
+import FirebaseCore
+import FirebaseAuth
 
 struct UserLoginScreen: View {
     @State var email: String = ""

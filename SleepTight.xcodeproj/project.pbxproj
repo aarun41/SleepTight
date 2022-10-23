@@ -14,7 +14,7 @@
 		4930E37A29038B15002DF753 /* UserLoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930E37929038B15002DF753 /* UserLoginScreen.swift */; };
 		497AC62429044C2800540944 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497AC62329044C2800540944 /* Helper.swift */; };
 		497AC62629044F3900540944 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497AC62529044F3900540944 /* ViewRouter.swift */; };
-		49CD0FA129045AD700087BCF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49CD0FA029045AD700087BCF /* GoogleService-Info.plist */; };
+		49C902AC2905114A0095C69A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49C902AB2905114A0095C69A /* GoogleService-Info.plist */; };
 		49CD0FA429045B6200087BCF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 49CD0FA329045B6200087BCF /* FirebaseAuth */; };
 		49CD0FA629045D4D00087BCF /* UserRegistrationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CD0FA529045D4D00087BCF /* UserRegistrationScreen.swift */; };
 		49CD0FA82904605900087BCF /* DoctorRegistrationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CD0FA72904605900087BCF /* DoctorRegistrationScreen.swift */; };
@@ -22,7 +22,6 @@
 		49CD0FAC2904609100087BCF /* DoctorPatientList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CD0FAB2904609100087BCF /* DoctorPatientList.swift */; };
 		49CD0FAE29046EAB00087BCF /* ChooseTypeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CD0FAD29046EAB00087BCF /* ChooseTypeScreen.swift */; };
 		49CD0FB02904717900087BCF /* DoctorLoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CD0FAF2904717900087BCF /* DoctorLoginScreen.swift */; };
-		49CD0FBE2904EB4E00087BCF /* UserCalendarScreen(WIP) in Resources */ = {isa = PBXBuildFile; fileRef = 49CD0FBD2904EB4E00087BCF /* UserCalendarScreen(WIP) */; };
 		49CD0FC02904ED0100087BCF /* GBurdellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CD0FBF2904ED0100087BCF /* GBurdellScreen.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,8 +36,8 @@
 		4930E37B29039882002DF753 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		497AC62329044C2800540944 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		497AC62529044F3900540944 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		49C902AB2905114A0095C69A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		49CD0F9E29045AB500087BCF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		49CD0FA029045AD700087BCF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		49CD0FA529045D4D00087BCF /* UserRegistrationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationScreen.swift; sourceTree = "<group>"; };
 		49CD0FA72904605900087BCF /* DoctorRegistrationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorRegistrationScreen.swift; sourceTree = "<group>"; };
 		49CD0FA92904608500087BCF /* UserHomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHomePage.swift; sourceTree = "<group>"; };
@@ -46,7 +45,7 @@
 		49CD0FAD29046EAB00087BCF /* ChooseTypeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseTypeScreen.swift; sourceTree = "<group>"; };
 		49CD0FAF2904717900087BCF /* DoctorLoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorLoginScreen.swift; sourceTree = "<group>"; };
 		49CD0FBD2904EB4E00087BCF /* UserCalendarScreen(WIP) */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "UserCalendarScreen(WIP)"; sourceTree = "<group>"; };
-		49CD0FBF2904ED0100087BCF /* GBurdellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBurdellScreen.swift; sourceTree = "<group>"; };
+		49CD0FBF2904ED0100087BCF /* GBurdellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GBurdellScreen.swift; path = SleepTight/GBurdellScreen.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +95,7 @@
 				49CD0FBD2904EB4E00087BCF /* UserCalendarScreen(WIP) */,
 				4930E37B29039882002DF753 /* Assets.xcassets */,
 				4930E36E29036B52002DF753 /* SleepTight.entitlements */,
-				49CD0FA029045AD700087BCF /* GoogleService-Info.plist */,
+				49C902AB2905114A0095C69A /* GoogleService-Info.plist */,
 				4930E36F29036B52002DF753 /* Preview Content */,
 			);
 			path = SleepTight;
@@ -176,8 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4930E37129036B52002DF753 /* Preview Assets.xcassets in Resources */,
-				49CD0FA129045AD700087BCF /* GoogleService-Info.plist in Resources */,
-				49CD0FBE2904EB4E00087BCF /* UserCalendarScreen(WIP) in Resources */,
+				49C902AC2905114A0095C69A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,9 +320,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SleepTight/SleepTight.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SleepTight/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -345,10 +345,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.SleepTight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -358,9 +360,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SleepTight/SleepTight.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SleepTight/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -381,10 +385,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.SleepTight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

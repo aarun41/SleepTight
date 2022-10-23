@@ -29,9 +29,15 @@ struct MotherView: View {
             case .doctorRegistrationScreen:
                 DoctorRegistrationScreen()
             case .userHomePage:
-                UserHomePage()
+                //UserHomePage()
+                GBurdellScreen()
             case .doctorPatientList:
                 DoctorPatientList()
+                //TGDPatientList
+            /*
+            case: .doctorPrescriptionScreen
+                TheGoodDoctorScreen()
+             */
             case .chooseTypeScreen:
                 ChooseTypeScreen()
             }

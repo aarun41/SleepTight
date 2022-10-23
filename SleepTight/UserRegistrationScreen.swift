@@ -8,6 +8,8 @@
 
 import SwiftUI
 import Firebase
+import FirebaseCore
+import FirebaseAuth
 
 struct UserRegistrationScreen: View {
     @State var email: String = ""
@@ -18,6 +20,10 @@ struct UserRegistrationScreen: View {
     @State var signUpErrorMessage = ""
     
     @EnvironmentObject var viewRouter: ViewRouter
+    
+    //var ref: DatabaseReference!
+
+    //ref = Database.database().reference()
     
     var body: some View {
         VStack {
